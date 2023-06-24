@@ -1,0 +1,21 @@
+body{
+    background-image: url(bg.jpg);
+}
+
+.elem{
+    width: 2px;
+    height: 2px;
+    background-color: red;
+    position: relative;
+    visibility:hidden;
+}
+
+.elem:hover{
+    cursor: pointer;
+}
+
+.play-button{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
