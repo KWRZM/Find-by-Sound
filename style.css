@@ -1,21 +1,33 @@
 body{
-    background-image: url(bg.jpg);
+    background-image: url(img/bg.jpg);
 }
 
 .elem{
-    width: 2px;
-    height: 2px;
+    width: 8px;
+    height: 8px;
     background-color: red;
     position: relative;
-    visibility:hidden;
+    border-radius: 8px;
+    pointer-events:auto;
+    opacity: 0;
 }
 
 .elem:hover{
     cursor: pointer;
 }
 
-.play-button{
+.diff{
     position: absolute;
     top: 30%;
-    left: 40%;
+    left: 27%;
+    background-color: white;
+}
+
+.diff button img{
+    transition: transform 0.2s ease-in-out;
+}
+
+.diff button img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
